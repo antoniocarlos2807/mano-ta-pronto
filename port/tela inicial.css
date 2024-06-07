@@ -1,0 +1,151 @@
+body {
+    background-color:  #f0f0f0; /* Fundo branco */
+    color: #444444; /* Texto em cinza grafite */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s; /* Adiciona transição suave */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #1b1b1b; /* Cinza grafite */
+    color: #ffffff; /* Texto em branco */
+    padding: 20px 0; /* Aumenta o espaçamento interno */
+    text-align: center;
+}
+
+.footer {
+    background-color: #f0f0f0; /* Cinza claro */
+    color: #000000; /* Texto em preto */
+    padding: 20px 0; /* Aumenta o espaçamento interno */
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura da página */
+    position: fixed; /* Fixa o rodapé */
+    bottom: 0; /* Alinha o rodapé na parte inferior da página */
+}
+
+.dark-mode {
+    background-color: #444444; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco */
+}
+
+.dark-mode .header {
+    background-color: #1b1b1b; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco */
+}
+
+.dark-mode .footer {
+    background-color: #444444; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco */
+}
+
+.dark-mode .content-background {
+    background-color: #444444; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco no modo escuro */
+}
+
+.light-mode .content-background {
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000; /* Texto preto no modo claro */
+}
+
+.light-mode body {
+    background-color: #f0f0f0; /* Fundo branco */
+    color: #444444; /* Texto em cinza grafite */
+}
+
+.light-mode .header {
+    background-color: #1b1b1b; /* Cor de fundo do cabeçalho no modo claro */
+    color: #e0e0e0; /* Cor do texto no cabeçalho no modo claro */
+}
+
+.light-mode .footer {
+    background-color: #f0f0f0; /* Cor de fundo do rodapé no modo claro */
+    color: #444444; /* Cor do texto no rodapé no modo claro */
+}
+
+/* Adiciona estilo aos botões */
+.button {
+    background-color: #5ebaf7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Adiciona transição suave */
+}
+
+.button:hover {
+    background-color: #92cbda;
+    color: #f0f0f0;
+}
+
+.mode-button {
+    position: fixed; /* Define a posição fixa */
+    top: 20px; /* Distância do topo da página */
+    right: 20px; /* Distância da direita da página */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 999; /* Garante que o botão esteja acima de outros elementos */
+}
+
+.icon-moon,
+.icon-sun {
+    vertical-align: middle;
+}
+
+.dark-mode .icon-moon {
+    display: none;
+}
+
+.light-mode .icon-sun {
+    display: none;
+}
+
+/* Classe para o fundo do conteúdo principal */
+.content-background {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 30px; /* Espaçamento interno */
+    margin-top: 30px; /* Espaçamento superior */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+/* Classe para imagens centralizadas e responsivas */
+.centered-image {
+    display: block; /* Para garantir que a margem automática funcione corretamente */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Estilo adicional para garantir que as imagens sejam responsivas em todos os dispositivos */
+.responsive-img {
+    width: auto; /* Largura automática para manter a proporção */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+@media only screen and (min-width: 768px) {
+    .centered-image {
+        max-width: 600px; /* Define a largura máxima como 600 pixels em telas maiores */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mode-button {
+        display: block;
+        position: static; /* Altera a posição para estática para permitir que flua naturalmente */
+        margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
+        text-align: right; /* Alinha o botão à direita */
+    }
+}

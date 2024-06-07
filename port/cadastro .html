@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+   
+    <a href="tela incial.html" class="menu-button">Menu Principal</a>
+
+    <button class="mode-button" id="modeButton">🌙</button>
+    <div class="container" id="container">
+        <h2><span id="modeIcon"></span> Bem-vindo! Cadastre-se</h2>
+        <form>
+            <div class="form-group">
+                <label for="phone">Número de Telefone</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]*" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Cadastrar Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Cadastrar Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="button" id="submitButton">Cadastrar</button>
+        </form>
+        <a href="login.html" class="button-secondary">Já tem um login? Faça o login</a>
+    </div>
+    
+    <script src="cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* Estilos gerais */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos dos botões */
+.button {
+    background-color: #666666;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #5ebaf7;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #666666;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: underline;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.button-secondary:hover {
+    color: #70bfff;
+}
+
+/* Estilos do carrossel */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    width: fit-content;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: calc(100% / 4 - 10px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    flex: 0 0 calc(25% - 10px);
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .carousel-item {
+        width: calc(100% / 3 - 10px);
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-item {
+        width: calc(100% / 2 - 10px);
+        padding: 10px;
+    }
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .carousel-container {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .description {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.dark-mode .carousel-item {
+    background-color: #333;
+    border-color: #555;
+}
+
+/* Estilos do botão de tema */
+.mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999; /* Certifique-se de que o botão esteja acima de outros elementos */
+}
+
+.mode-button:hover {
+    transform: scale(1.2);
+}
+/* Botão de Menu Principal */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #5ebaf7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #50a6d4;
+}

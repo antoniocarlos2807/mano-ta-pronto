@@ -1,0 +1,109 @@
+/* Estilos gerais */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container.dark-mode {
+    background-color: #313131;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos dos botões */
+.button {
+    background-color: #666666;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #5ebaf7;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #666666;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: underline;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.button-secondary:hover {
+    color: #70bfff;
+}
+
+/* Estilos do ícone de modo */
+.mode-button {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mode-button:hover {
+    transform: scale(1.2);
+}
+
+.mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #5ebaf7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #50a6d4;
+}
